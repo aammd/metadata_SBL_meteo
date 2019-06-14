@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1" packageId="0256bb61-dcbc-4046-9d1b-cc1f4cf1bbc0" system="uuid" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1/ eml.xsd">
+  <dataset>
+    <title>Meterological data from the Station Biologique des Laurentides</title>
+    <creator>
+      <individualName>
+        <givenName>Roxane</givenName>
+        <surName>Maranger</surName>
+      </individualName>
+      <electronicMailAddress>r.maranger@umontreal.ca</electronicMailAddress>
+    </creator>
+    <pubDate>2019</pubDate>
+    <abstract>This dataset contains measurements of wind, rain, air and soil temperature, relative humitidy, pressure, UVB and photosynthetically active radiation, measured at the Station Biologique des Laurentides outside of Montreal, Canada. Measurements were made every 15 minutes from 01 Jan 2011 to 01 Jan 2017</abstract>
+    <keywordSet>
+      <keyword>rainfall</keyword>
+      <keyword>PAR</keyword>
+      <keyword>UVB</keyword>
+      <keyword>temperature</keyword>
+      <keywordThesaurus>LTER controlled vocabulary</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>This dataset is released to the public and may be freely
+downloaded. Please keep the designated Contact person informed of any
+plans to use the dataset. Publications and data products
+that make use of the dataset must include proper acknowledgement.</intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>These measurments were collected from a fixed weather station at the Station Biologique des Laurentides, which is the research station of the Université de Montreal</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>74.006</westBoundingCoordinate>
+          <eastBoundingCoordinate>74.005</eastBoundingCoordinate>
+          <northBoundingCoordinate>45.989</northBoundingCoordinate>
+          <southBoundingCoordinate>45.988</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2011-01-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2017-01-01</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <individualName>
+        <givenName>Roxane</givenName>
+        <surName>Maranger</surName>
+      </individualName>
+      <organizationName>Station Biologique des Laurentides</organizationName>
+      <phone>1 450 563-3111</phone>
+    </contact>
+    <dataTable>
+      <entityName>sbl_meteo.tsv</entityName>
+      <entityDescription>Meterological data collected at the SBL from 2011 to 2016 </entityDescription>
+      <physical>
+        <objectName>sbl_meteo.tsv</objectName>
+        <size unit="bytes">13843161</size>
+        <authentication method="MD5">254d5234e13c745502609120563af011</authentication>
+        <dataFormat>
+          <textFormat>
+            <recordDelimiter>
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>station</attributeName>
+          <attributeDefinition>weather station ID</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>the name of the station</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>year</attributeName>
+          <attributeDefinition>Date of sampling</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>timestamp</attributeName>
+          <attributeDefinition>time on a 24 hour clock</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DDTHH:MM:SS</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>wind_speed</attributeName>
+          <attributeDefinition>the speed the wind</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>metersPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>wind_direction</attributeName>
+          <attributeDefinition>compass degree of the wind</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>temperature</attributeName>
+          <attributeDefinition>temperature of the air</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>relative_humidity</attributeName>
+          <attributeDefinition>Relative humidity in percent</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pressure</attributeName>
+          <attributeDefinition>Air pressure</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilopascal</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>UVB</attributeName>
+          <attributeDefinition>ultraviolet B radiation</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattsPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>rain</attributeName>
+          <attributeDefinition>Rainfall in mm</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>soil_temperature</attributeName>
+          <attributeDefinition>temperature of soil</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sensor_temp</attributeName>
+          <attributeDefinition>temperture of UV sensor</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>photosynthesis_active_radiation</attributeName>
+          <attributeDefinition>Photosynthetically active radiation</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerMeterSquaredPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="micromolePerMeterSquaredPerSecond" multiplierToSI="1" name="micromolePerMeterSquaredPerSecond" parentSI="numberPerSquareMeterPerSecond" unitType="luminosity">
+          <description>number of micromoles of photos per square meter</description>
+        </unit>
+        <unit id="wattsPerMeterSquared" multiplierToSI="1" name="wattsPerMeterSquared" parentSI="numberPerSquareMeter" unitType="luminosity">
+          <description>watts per square meter</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
